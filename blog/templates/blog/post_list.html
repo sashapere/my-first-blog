@@ -24,5 +24,15 @@
 		<ul><li>first_1</li><li>second_2</li></ul>
 	</div>
 
+	<div>
+	{% for post in posts %}
+    		<div>
+       		<p>published: {{ post.published_date }}</p>
+        	<h1><a href="">{{ post.title }}</a></h1>
+        	<p>{{ post.text|linebreaksbr }}</p>
+    		</div>
+	{% endfor %}
+	</div>
+
     </body>
 </html>
